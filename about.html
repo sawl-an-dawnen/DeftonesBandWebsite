@@ -3,34 +3,34 @@
     <head>
         <title>Deftones | About</title><!--title-defines what will be shown in the tab as the name of the tab -->
         <meta name="description" content="This is the description"><!--meta- help to define what is shown as the description when searched for in the search engine -->
+        <link rel="stylesheet" href="styles.css"/><!--link-this is the tag that links our current page to the CSS styling sheet, which will format our content -->
     </head>
     <body>
-        <header>
+        <header class="main-header">
         <!--header-this tag signifies that this element will go on the head, or top, of our page. Does not add any style -->
-             <nav>
+             <nav class="nav main-nav">
              <!--nav-this tag signifies that this element is our navigation section of our page to the browser. Does not add style to element-->
                  <ul>
                  <!--ul-stands for unordered list. Alternativaly the ol "ordered list" can be used to signifiy a specifically ordered list-->
-                     <li>HOME</li>
-                     <li>STORE</li>
-                     <li>ABOUT</li>
+                     <li><a href="index.html">home</a></li>
+                     <li><a href="store.html">store</a></li>
+                     <li><a href="about.html">about</a></li>
                      <!--li- list items. Can only be used in ul and ol. in ul will be styled with bullets. in ol will be styled with numbers-->
                  </ul>
              </nav>
-             <hr>
              <!--hr- empty element. provides us will horizontal divider, and stands for "horizontal rule"-->
-             <h1>DEFTONES</h1>
+             <h1 class="band-name band-name-large">deftones</h1>
              <!--h1- heading element. can be sized by using different element tag h1-h6, with h6 being the smallest -->
         </header>
-        <section>
-            <h2>ABOUT</h2>
+        <section class="content-section container">
+            <h2 class="section-header">ABOUT</h2>
             <p>Deftones are an American alternative metal band formed in Sacramento, California in 1988. It was formed by Chino Moreno (lead vocals, rhythm guitar), 
             Stephen Carpenter (lead guitar), Abe Cunningham (drums), and Dominic Garcia (bass). During their first five years, the band's lineup changed several times, 
             but stabilized in 1993 when Cunningham rejoined after his departure in 1990; by this time, Chi Cheng was bassist. The lineup remained stable for fifteen years, 
             with the exception of keyboardist and turntablist Frank Delgado being added in 1999. The band is known as one of the most experimental groups to have come from 
             the alternative metal scene.
             </p>
-            <img src="Images\iB6mfm2EhcqDJtQ9q2dZKT-1200-80.jpg">
+            <img src="Images\band.jpg">
             <p>Deftones have released nine albums since their inception. After the lineup settled in 1993, the band secured a recording contract with Maverick Records, 
             and subsequently released their debut album Adrenaline in 1995. Promoting the album by touring exhaustively with other bands in the scene, Deftones managed to 
             gain a dedicated fan base through word of mouth. Their second album Around the Fur was released in 1997, reached chart positions along with its singles, and 
@@ -56,9 +56,21 @@
         <!--footer-tag defines the footer element designed at the bottom of the webpage -->
             <h3>DEFTONES</h3>
             <ul>
-                <li><img src="Images\1590430872small-youtube-logo.png"></li>
-                <li><img src="Images\174872.png"></li>
-                <li><img src="Images\2048px-Instagram_icon.png"></li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCQDsiRE--IQe5ycCLeetIxQ" target = "_blank">
+                    <img src="Images\youtube.png" width = "50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/6Ghvu1VvMGScGpOUJBAHNH" target = "_blank">
+                    <img src="Images\spotify.png" width = "50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/deftones/?hl=en" target = "_blank">
+                    <img src="Images\insta.png" width = "50">
+                    </a>
+                </li>
             </ul>
         </footer>
     </body>
